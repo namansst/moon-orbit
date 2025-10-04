@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+   }
+   .contanier{
+    position: relative;
+    top:50vh;
+    display: block;
+    align-items: center;
+    justify-content: center; 
+    animation: rotate 5s infinite;
+   
+   }
+   .earth{
+    background-color: brown;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    top:50vh;
+    left:30px;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+   }
+   .moon{
+    position: relative;
+    left: 100px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    
+   }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+   
+</style>
+<body>
+    <div class="earth">
+        </div>
+    <div class="contanier">
+        
+        <div class="moon"></div>
+    </div>
+</body>
+</html>
